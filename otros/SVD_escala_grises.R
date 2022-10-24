@@ -1,4 +1,4 @@
-#Limpiamos área de trabajo
+#Limpiamos Ã¡rea de trabajo
 rm(list=ls())
 
 #Para guardar ejemplo (inicio)
