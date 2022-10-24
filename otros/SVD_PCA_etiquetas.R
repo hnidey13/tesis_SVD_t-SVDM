@@ -1,4 +1,4 @@
-#Limpiamos área de trabajo
+#Limpiamos Ã¡rea de trabajo
 rm(list=ls())
 
 #Para graficar
@@ -35,33 +35,33 @@ PC <- princomp(A)$loadings
 plot(PC[,1],PC[,2], main = "PC de A")
 text(PC[,1],PC[,2], colnames(A))
 
-y <- A %*% PC #Proyección
-plot(y[,1],y[,2], main = "Proyección de A")
+y <- A %*% PC #ProyecciÃ³n
+plot(y[,1],y[,2], main = "ProyecciÃ³n de A")
 text(y[,1],y[,2])
 
 #PCA de t(A)
 eigen(cov(t(A)))$vectors
-PC <- prcomp(t(A))$rotation #No se por que varían
+PC <- prcomp(t(A))$rotation #No se por que varÃ­an
 plot(PC[,1],PC[,2], main = "PC de t(A)")
 text(PC[,1],PC[,2])
 
 y <- t(A) %*% PC
-plot(y[,1],y[,2], main = "Proyección de t(A)")
+plot(y[,1],y[,2], main = "ProyecciÃ³n de t(A)")
 text(y[,1],y[,2], rownames(y))
 
-#Gráfica de SVD de A (V)
+#GrÃ¡fica de SVD de A (V)
 plot(SVD_A$v[,1],SVD_A$v[,2], main = "V de SVD de A")
 text(SVD_A$v[,1],SVD_A$v[,2], colnames(A))
 
-#Gráfica de SVD de A (U)
+#GrÃ¡fica de SVD de A (U)
 plot(SVD_A$u[,1],SVD_A$u[,2], main = "U de SVD de A")
 text(SVD_A$u[,1],SVD_A$u[,2])
 
-#Gráfica de SVD de Ac (V)
+#GrÃ¡fica de SVD de Ac (V)
 plot(SVD_Ac$v[,1],SVD_Ac$v[,2], main = "V de SVD de Ac")
 text(SVD_Ac$v[,1],SVD_Ac$v[,2], colnames(A))
 
-#Gráfica de SVD de Ac (U)
+#GrÃ¡fica de SVD de Ac (U)
 plot(SVD_Ac$u[,1],SVD_Ac$u[,2], main = "U de SVD de Ac")
 text(SVD_Ac$u[,1],SVD_Ac$u[,2])
 
@@ -72,11 +72,11 @@ round(SVD_Atc$d,2)
 round(SVD_Atc$u,2)
 round(SVD_Atc$v,2)
 
-#Gráfica de SVD de t(A)c (V)
+#GrÃ¡fica de SVD de t(A)c (V)
 plot(SVD_Atc$v[,1],SVD_Atc$v[,2], main = "V de SVD de t(A)c")
 text(SVD_Atc$v[,1],SVD_Atc$v[,2])
 
-#Gráfica de SVD de t(A)c (U)
+#GrÃ¡fica de SVD de t(A)c (U)
 plot(SVD_Atc$u[,1],SVD_Atc$u[,2], main = "U de SVD de t(A)c")
 text(SVD_Atc$u[,1],SVD_Atc$u[,2], colnames(A))
 
