@@ -1,4 +1,4 @@
-#Limpiamos área de trabajo
+#Limpiamos Ã¡rea de trabajo
 rm(list=ls())
 
 #Para guardar ejemplo (inicio)
@@ -24,7 +24,7 @@ str(image_mat)
 
 #Verificamos que es posible graficar de la matriz
 image2 <- array(image_mat,dim)
-#plot(as.cimg(image2), axes = FALSE, main = "Reconstruída")
+#plot(as.cimg(image2), axes = FALSE, main = "ReconstruÃ­da")
 
 #SVD
 library(Matrix)
@@ -52,7 +52,7 @@ str(image_mat1)
 
 #Verificamos que es posible graficar de las matrices
 image2 <- array(c(image_mat1,image_mat2,image_mat3),dim)
-#plot(as.cimg(image2), axes = FALSE, main = "Reconstruída")
+#plot(as.cimg(image2), axes = FALSE, main = "ReconstruÃ­da")
 
 #SVD
 library(Matrix)
@@ -100,7 +100,7 @@ str(image_mat)
 
 #Verificamos que es posible graficar de la matriz
 image2 <- array(image_mat,dim)
-plot(as.cimg(image2), axes = FALSE, main = "Reconstruída")
+plot(as.cimg(image2), axes = FALSE, main = "ReconstruÃ­da")
 
 #SVD
 library(Matrix)
@@ -125,7 +125,7 @@ str(image_mat)
 
 #Verificamos que es posible graficar de la matriz
 image2 <- aperm(array(t(image_mat),c(dim[2],dim[1],1,3)),c(2,1,3,4))
-plot(as.cimg(image2), axes = FALSE, main = "Reconstruída")
+plot(as.cimg(image2), axes = FALSE, main = "ReconstruÃ­da")
 
 #SVD
 library(Matrix)
