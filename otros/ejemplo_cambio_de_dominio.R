@@ -37,7 +37,7 @@ A_hat
 #Desdoble de forma 3
 M_x_A3 <- cbind(A_hat[1,1,],A_hat[1,2,],A_hat[2,1,],A_hat[2,2,])
 
-#Multiplicación matricial inversa
+#MultiplicaciÃ³n matricial inversa
 A3 <- solve(M) %*% M_x_A3
 
 #Doblez de forma 3 de A3
